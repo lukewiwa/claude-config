@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# Links this repo's CLAUDE.md and skills into ~/.claude. Safe to re-run.
+# Links this repo's skills into ~/.claude/skills. Safe to re-run.
 # Run by both lukewiwa/dotfiles (macOS host) and lukewiwa/devcontainer-dotfiles (containers).
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -20,8 +20,6 @@ link() {
     ln -sfn "$src" "$dest"
     echo "  Linked ${dest} -> ${src}"
 }
-
-link "${SCRIPT_DIR}/CLAUDE.md" "${CLAUDE_DIR}/CLAUDE.md"
 
 for skill in "${SCRIPT_DIR}"/skills/*/; do
     skill="${skill%/}"

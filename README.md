@@ -1,10 +1,10 @@
 # claude-config
 
-My personal Claude Code setup, shared between my Mac and my devcontainers.
+My personal Claude Code skills, shared between my Mac and my devcontainers. Each folder in `skills/`
+is linked into `~/.claude/skills/`.
 
-- `CLAUDE.md` holds my code taste. It's linked to `~/.claude/CLAUDE.md`, so it loads in every session.
-- `skills/` holds personal skills, each linked into `~/.claude/skills/`. For example, `/review` reviews
-  code against the rules in `CLAUDE.md`.
+- `wiwa-code-taste`: my code standards and how to review against them. Run it with `/wiwa-code-taste`. Claude
+  also picks it up on its own for reviews.
 
 ## Install
 
